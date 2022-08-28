@@ -1,4 +1,7 @@
 {
+    "name": "hosting-a-full-stack-app",
+    "version": "1.0.0",
+    "description": "Taking a newly developed full stack application and deploy it to a cloud service provider so that it is available to customers. This application contains the main components of a 3-tier full stack application (UI, API, and Database).",
     "scripts": {
         "frontend:install": "cd udagram/udagram-frontend && npm install -f",
         "frontend:start": "cd udagram/udagram-frontend && npm run start",
@@ -12,5 +15,16 @@
         "api:start": "cd udagram/udagram-api && npm run dev",
         "api:deploy": "cd udagram/udagram-api && npm run deploy",
         "deploy": "npm run api:deploy && npm run frontend:deploy"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FADL285/Hosting-a-Full-Stack-Application.git"
+    },
+    "keywords": [],
+    "author": "Mohamed Fadl <Mohamed.Fadl2852@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/FADL285/Hosting-a-Full-Stack-Application/issues"
+    },
+    "homepage": "https://github.com/FADL285/Hosting-a-Full-Stack-Application#readme"
 }
