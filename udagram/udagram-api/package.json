@@ -12,7 +12,9 @@
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "npm run build && chmod +x bin/deploy.sh && bin/deploy.sh",
+    "deploy:script": "chmod +x bin/deploy.sh && bin/deploy.sh",
+    "set:env": "chmod +x bin/set_env.sh && bin/set_env.sh",
+    "deploy": "npm run build && npm run deploy:script && npm run set:env",
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
