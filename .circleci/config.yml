@@ -20,11 +20,11 @@ jobs:
       - run:
           name: Back-End Install Dependencies
           command: |
-            npm run backend:install
+            npm run api:install
       - run:
           name: Back-End Build & Deploy
           command: |
-            npm run backend:deploy
+            npm run api:deploy
       - run:
           name: Front-End Build & Front-End Deploy
           command: |
