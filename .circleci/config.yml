@@ -6,11 +6,11 @@ orbs:
 jobs:
   deploy:
     docker:
-      - image: circleci/node:14.17.3
+      - image: "cimg/base:stable"
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
+      - node/install
+          node-version: 14.17.3
       - aws-cli/setup
       - eb/setup
       - run:
@@ -23,10 +23,12 @@ jobs:
             npm run backend:install
       - run:
           name: Back-End Build & Deploy
-          command: npm run backend:deploy
+          command: |
+            npm run backend:deploy
       - run:
           name: Front-End Build & Front-End Deploy
-          command: npm run frontend:deploy
+          command: |
+            npm run frontend:deploy
 workflows:
     build_deploy:
         jobs:
