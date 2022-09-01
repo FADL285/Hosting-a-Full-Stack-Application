@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - node/install
-          node-version: 14.17.3
+          node-version: "14.17.3"
       - aws-cli/setup
       - eb/setup
       - run:
