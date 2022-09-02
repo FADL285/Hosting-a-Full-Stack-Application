@@ -101,48 +101,44 @@ There are no Unit test on the back-end
 ## Diagrams
 - **AWS Infrastructure Diagram**
 ![AWS Architecture Diagram](/docs/udagram.png)
+Check AWS [Infrastructure Description](docs/INFRASTRUCTURE_DESCRIPTION.md) for more details.
 
+<br />
 
 - **Pipeline process Diagram**
 [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/circleci/circleci-docs)
 ![Pipeline process Diagram](/docs/pipeline_process.png)
+Check CircleCI [Pipeline Process](docs/PIPELINE_PROCESS.md) for more details.
+
+<br />
 
 ## Screenshots
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; row-gap: 1rem">
-    <figure>
-        <img src="docs/screenshots/app-running-locally.png" alt="App Running Locally" style="height: 100%; width: 100%; object-fit: contain" >
-        <figcaption>➡ App Running Locally</figcaption>
-    </figure>
-    <figure>
-        <img src="docs/screenshots/app-running-on-s3.png" alt="App Running Locally" style="height: 100%; width: 100%; object-fit: contain" >
-        <figcaption>➡ App Running on AWS S3</figcaption>
-    </figure>
-    <figure>
-        <img src="docs/screenshots/rds.png" alt="Postgres Database on RDS" style="height: 100%; width: 100%; object-fit: contain" >
-        <figcaption>➡ Testing Postgres Database Connection - RDS</figcaption>
-    </figure>
-    <figure>
-        <img src="docs/screenshots/s3-from-console.png" alt="AWS S3 Config with files uploaded" style="height: 100%; width: 100%; object-fit: contain" >
-        <figcaption>➡ AWS S3 Config with files uploaded</figcaption>
-    </figure>
-    <figure>
-        <img src="docs/screenshots/elastic-beanstalk-status.png" alt="Elastic Beanstalk Status" style="height: 100%; width: 100%; object-fit: contain" >
-        <figcaption>➡ Elastic Beanstalk Status From Console</figcaption>
-    </figure>
-    <figure>
-        <img src="docs/screenshots/elastic-beanstalk-status-health-cli.png" alt="Elastic Beanstalk Status From CLI" style="height: 100%; width: 100%; object-fit: contain" >
-        <figcaption>➡ Elastic Beanstalk Status From CLI</figcaption>
-    </figure>
-    <figure>
-        <img src="docs/screenshots/circleci_pipeline.png" alt="Success CircleCi Pipeline" style="height: 100%; width: 100%; object-fit: contain" >
-        <figcaption>➡ Success CircleCi Pipeline</figcaption>
-    </figure>
-    <figure>
-        <img src="docs/screenshots/circleci_pipeline_env_vars.png" alt="CircleCi Project Env Variables" style="height: 100%; width: 100%; object-fit: contain" >
-        <figcaption>➡ CircleCi Project Env Variables</figcaption>
-    </figure>
-</div>
+- **App Running on S3**
+![App Running on AWS S3](docs/screenshots/app-running-on-s3.png)
+
+<br />
+
+- **Testing Postgres Database Connection - RDS**
+![Testing Postgres Database Connection - RDS](docs/screenshots/rds.png)
+
+<br />
+
+- **AWS S3 Config with files uploaded**
+![AWS S3 Config with files uploaded](docs/screenshots/s3-from-console.png)
+
+<br />
+
+- **Elastic Beanstalk Status & Health**
+![Elastic Beanstalk Status From Console](docs/screenshots/elastic-beanstalk-status.png)
+![Elastic Beanstalk Status From CLI](docs/screenshots/elastic-beanstalk-status-health-cli.png)
+
+<br />
+
+- **CircleCi Pipeline & Env Variables**
+![Success CircleCi Pipeline](docs/screenshots/circleci_pipeline.png)
+![CircleCi Project Env Variables](docs/screenshots/circleci_pipeline_env_vars.png)
+
 
 ## Built With
 

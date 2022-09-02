@@ -27,6 +27,6 @@
 ➡ A S3 bucket for hosting uploaded pictures.
 ```
 
-➡ For Backend App Dependencies ➡ [Package.json](udagram/udagram-api/package.json)
+➡ For Backend App Dependencies check dependencies & devDependencies section ➡ [Package.json](udagram/udagram-api/package.json)
 
-➡ For Front-End App Dependencies ➡ [Package.json](udagram/udagram-frontend/package.json)
+➡ For Front-End App Dependencies check dependencies & devDependencies section ➡ [Package.json](udagram/udagram-frontend/package.json)

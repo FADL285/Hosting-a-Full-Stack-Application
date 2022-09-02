@@ -16,7 +16,10 @@ Every committed revision triggers an automated build and test.
 
 ## CircleCI
 
-CircleCI automatically runs the build and test processes whenever the developer commit code, and then displays the build status in the GitHub branch. First step is to create a config.yml in the project’s root directory and CircleCI will read it each time it runs a build.
+CircleCI automatically runs the build and test processes whenever the developer commit code, and then displays the build status in the GitHub branch. First step is to create a `config.yml` in the project’s root directory and CircleCI will read it each time it runs a build.
+
+- Frontend: Runs the build script given in the `package.json` file. Then uses AWS CLI to upload assets to S3.
+- Server: Runs the build script, exports all environment variables from CircleCI configuration, then runs the archive script. Then uses AWS CLI to upload archive to S3.
 
 ### Environment Variables
 ![Environment Variables](screenshots/circleci_pipeline_env_vars.png)
